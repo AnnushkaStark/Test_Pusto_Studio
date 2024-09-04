@@ -14,7 +14,7 @@ class Prize(models.Model):
     title = models.CharField(max_length=100)
 
 
-class PlayerLeveel(models.Model):
+class PlayerLevel(models.Model):
     player = models.ForeignKey(Player, on_delete=models.CASCADE)
     level = models.ForeignKey(Level, on_delete=models.CASCADE)
     completed = models.DateTimeField()
